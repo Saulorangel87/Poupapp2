@@ -1,10 +1,11 @@
-function App() {
+import { Aside } from "./components/Aside";
 
+function App() {
   return (
-    <div className="bg-black min-h-screen">
-     
+    <div className="bg-neutral-background min-h-screen">
+      <Aside />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
