@@ -1,5 +1,5 @@
-const Card = ({ children }) => {
-  return <div className="bg-neutral-surface rounded-2xl overflow-hidden flex flex-col">{children}</div>;
+const Card = ({ children, className = "" }) => {
+  return <div className={`bg-neutral-surface rounded-2xl overflow-hidden flex flex-col ${className}`}>{children}</div>;
 };
 
 export const CardHeader = ({ children }) => {
@@ -10,8 +10,12 @@ export const CardHeader = ({ children }) => {
   );
 };
 
-export const CardBody = ({ children }) => {
-  return <div className="py-6 px-4 text-neutral-darker text-base leading-[120%] font-bold flex-grow flex flex-col justify-center">{children}</div>;
+export const CardBody = ({ children, className = "" }) => {
+  return (
+    <div className={`py-6 px-4 text-neutral-darker text-base leading-[120%] font-bold flex-grow flex flex-col justify-center ${className}`}>
+      {children}
+    </div>
+  );
 };
 
 Card.Header = CardHeader;

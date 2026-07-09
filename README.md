@@ -1,16 +1,70 @@
-# React + Vite
+# PoupApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PoupApp e uma interface de controle financeiro criada como projeto ficticio da Alura. A aplicacao apresenta um painel com resumo do orcamento diario, progresso de meta financeira, movimentacoes recentes e contas cadastradas.
 
-Currently, two official plugins are available:
+O objetivo do projeto e praticar a construcao de uma tela moderna com React, componetizacao e estilização com Tailwind CSS, mantendo os elementos visuais organizados em cards reutilizaveis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Exibicao do orcamento diario disponivel.
+- Card com progresso da meta financeira.
+- Lista de movimentacoes financeiras com entradas e saidas destacadas por cor.
+- Lista de contas bancarias com saldo.
+- Campo de busca no topo da area principal.
+- Layout com menu lateral, area principal e cards de resumo.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React: biblioteca usada para criar a interface com componentes reutilizaveis.
+- Vite: ferramenta usada para criar, rodar e gerar o build do projeto.
+- Tailwind CSS: framework de CSS usado para estilizar os componentes com classes utilitarias.
+- JavaScript: linguagem principal da aplicacao.
+- ESLint: ferramenta usada para manter padroes e boas praticas no codigo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura do projeto
+
+```txt
+src/
+  assets/            Imagens utilizadas no projeto
+  components/        Componentes reutilizaveis da interface
+  App.jsx            Composicao principal da tela
+  index.css          Configuracao de tema e estilos globais
+  main.jsx           Ponto de entrada da aplicacao
+```
+
+## Como executar
+
+Instale as dependencias:
+
+```bash
+npm install
+```
+
+Rode o projeto em ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Gere a versao de producao:
+
+```bash
+npm run build
+```
+
+Visualize o build gerado:
+
+```bash
+npm run preview
+```
+
+## Scripts disponiveis
+
+- `npm run dev`: inicia o servidor de desenvolvimento.
+- `npm run build`: gera os arquivos finais da aplicacao.
+- `npm run lint`: executa a verificacao do codigo com ESLint.
+- `npm run preview`: abre uma pre-visualizacao do build.
+
+## Status
+
+Projeto em desenvolvimento, com foco na estilização do dashboard financeiro e organizacao dos componentes da interface.
