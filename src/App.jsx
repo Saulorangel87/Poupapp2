@@ -1,7 +1,11 @@
 import { Aside } from "./components/Aside";
+import Card from "./components/Card";
 import { Container } from "./components/Container";
+import { DailyBudget } from "./components/DailyBudget";
 import { Main } from "./components/Main";
+import { SavingsStatus } from "./components/SavingsStatus";
 import { Searchinput } from "./components/Searchinput";
+import { Typography } from "./components/Typography";
 
 function App() {
   return (
@@ -10,6 +14,22 @@ function App() {
         <Aside />
         <Main>
           <Searchinput name="q" />
+          <div>
+            <Typography variant="h1">Olá, Saulo!</Typography>
+            <Typography>Veja como estão suas finanças hoje.</Typography>
+          </div>
+          <section>
+            <Card.Header>Orçamento diário disponível</Card.Header>
+            <Card.Body>
+              <DailyBudget value={42} />
+            </Card.Body>
+            <Card.Header>Progresso da meta financeira</Card.Header>
+            <Card.Body><SavingsStatus /></Card.Body>
+            <Card.Header>Movimentação financeira</Card.Header>
+            <Card.Body>R$200</Card.Body>
+            <Card.Header>Minhas contas</Card.Header>
+            <Card.Body>R$200</Card.Body>
+          </section>
         </Main>
       </Container>
     </div>
