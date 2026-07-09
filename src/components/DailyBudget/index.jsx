@@ -7,7 +7,7 @@ const formarter = new Intl.NumberFormat("pt-BR", {
 
 export const DailyBudget = ({ value }) => {
   return (
-    <p className="m-0 text-primary-highlight font-bold text-[39px] leading-[125%] text-center">
+    <p className="m-0 text-primary-highlight font-bold text-[32px] leading-[125%] text-center">
       {formarter.format(value)}
     </p>
   );
